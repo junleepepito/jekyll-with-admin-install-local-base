@@ -1,0 +1,52 @@
+# ---------------------------------------------------------------
+# SITE IDENTITY
+# ---------------------------------------------------------------
+
+title: jekyll-with-admin-install-local-base
+
+# Your name or brand — shown in the footer and as post author
+# author: Your Name
+
+# One-line description of your site — shown in footer and meta tags
+description: A short description of what this site is about
+
+# Your public site URL — required for SEO tags and feed
+# url: "https://yoursite.com"
+
+# Only needed if your site lives in a subfolder, e.g. /blog
+# baseurl: ""
+
+# Contact email — shown in the footer if set
+# email: your@email.com
+
+# ---------------------------------------------------------------
+# SOCIAL LINKS  (uncomment and fill in to show icons in footer)
+# ---------------------------------------------------------------
+
+# github_username: your_github
+# twitter_username: your_twitter
+# instagram_username: your_instagram
+# linkedin_username: your_linkedin
+# youtube_username: your_youtube
+# facebook_username: your_facebook
+# mastodon:
+#   - username: your_username
+#     instance: mastodon.social
+
+# ---------------------------------------------------------------
+# BUILD SETTINGS  (leave these as-is)
+# ---------------------------------------------------------------
+
+baseurl: ""
+url: ""
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+sass:
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
