@@ -47,31 +47,18 @@ The admin panel will be at `http://localhost:4000/admin`
 
 ## What to commit to GitHub
 
-```
-┌────────────────────────────────────────┬──────────┬───────────────────────────────────┐
-│                  Path                  │ Include? │                Why                │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ _layouts/, _includes/, _sass/, assets/ │ ✅       │ Local minima copy                 │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ _posts/                                │ ✅       │ Content                           │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ vendor/cache/                          │ ✅       │ Offline gem cache                 │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ Gemfile, Gemfile.lock                  │ ✅       │ Pinned deps                       │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ _config.yml                            │ ✅       │ Site config                       │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ README.md                              │ ✅       │                                   │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ .gitignore                             │ ✅       │                                   │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ _site/                                 │ ❌       │ Generated output, rebuild locally │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ vendor/bundle/                         │ ❌       │ Installed gems, machine-specific  │
-├────────────────────────────────────────┼──────────┼───────────────────────────────────┤
-│ .jekyll-cache/, .sass-cache/           │ ❌       │ Temporary build caches            │
-└────────────────────────────────────────┴──────────┴───────────────────────────────────┘
-```
+| Path | Include? | Why |
+|------|:--------:|-----|
+| `_layouts/`, `_includes/`, `_sass/`, `assets/` | ✅ | Local minima copy |
+| `_posts/` | ✅ | Content |
+| `vendor/cache/` | ✅ | Offline gem cache |
+| `Gemfile`, `Gemfile.lock` | ✅ | Pinned deps |
+| `_config.yml` | ✅ | Site config |
+| `README.md` | ✅ | |
+| `.gitignore` | ✅ | |
+| `_site/` | ❌ | Generated output — rebuild locally |
+| `vendor/bundle/` | ❌ | Installed gems, machine-specific |
+| `.jekyll-cache/`, `.sass-cache/` | ❌ | Temporary build caches |
 
 > `vendor/bundle/` is already excluded by `.gitignore`. The cache (`vendor/cache/`) is intentionally kept so clones work offline.
 
